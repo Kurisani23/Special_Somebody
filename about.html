@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, lightblue, white);
+            color: #444;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header {
+            background-color: lightblue;
+            padding: 30px;
+        }
+        header h1 {
+            color: black;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 36px;
+        }
+        nav {
+            background-color: rgb(41, 189, 238);
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 900px;
+            background: lightblue;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            animation: slideUp 1.5s;
+        }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile img {
+            width: 180px;
+            height: 180px;
+            border-radius: 18px;
+            border: 4px solid blue;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            animation: zoomIn 1.5s;
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <p>A little bit about the person who adores you, Lerato. ❤️</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        
+        <a href="question.html">A Mystery Unfolds</a>
+    </nav>
+
+    <section>
+        <div class="profile">
+            
+            <p class="description">
+             I'm someone who believes in love, in kindness, and in the magic of meeting someone as special as you. I created this website because I wanted to share a little bit of myself with you, and to let you know how much I cherish the conversations and moments we share. Every page here reflects a part of what I feel for you, and I can’t wait to share even more moments with you.❤️
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made with love, for someone truly special. 🌹</p>
+    </footer>
+</body>
+</html>

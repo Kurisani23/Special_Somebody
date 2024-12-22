@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Big Question</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffe6f2, #ffffff);
+            color: #444;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header {
+            background-color: #ff99cc;
+            padding: 30px;
+        }
+        header h1 {
+            color: #ffffff;
+            font-family: 'Brush Script MT', cursive;
+            font-size: 36px;
+        }
+        nav {
+            background-color: #ff66b2;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 900px;
+            background: #ffe6f2;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            position: relative;
+        }
+        .heart {
+            width: 50px;
+            height: 50px;
+            background-color: #ff66b2;
+            margin: 20px auto;
+            position: relative;
+            transform: rotate(45deg);
+            animation: popUp 2s infinite;
+        }
+        .heart::before, .heart::after {
+            content: "";
+            width: 50px;
+            height: 50px;
+            background-color: #ff66b2;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart::before {
+            top: -25px;
+            left: 0;
+        }
+        .heart::after {
+            left: -25px;
+            top: 0;
+        }
+        @keyframes popUp {
+            0%, 100% { transform: scale(1) rotate(45deg); }
+            50% { transform: scale(1.3) rotate(45deg); }
+        }
+        #question {
+            font-size: 20px;
+            margin-top: 30px;
+            animation: typeEffect 15s steps(40) 1;
+            white-space: nowrap;
+            overflow: hidden;
+            
+            display: inline-block;
+        }
+        @keyframes typeEffect {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        .profile-pic {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #ff69b4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: bounceIn 1.5s;
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Big Question</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+       
+        <a href="question.html">A Mystery Unfolds</a>
+    </nav>
+
+    <section>
+        <img src="Lerato1.jpg" alt="Lerato's Picture" class="profile-pic">
+        <div class="heart"></div>
+        <p id="question">Lerato, will you be my girlfriend? ❤️</p>
+    </section>
+
+    <footer>
+        <p>Made with love, for someone truly special. 🌹</p>
+    </footer>
+</body>
+</html>

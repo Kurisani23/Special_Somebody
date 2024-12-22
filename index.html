@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Website for You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f9f9f9, #ffe6f7);
+            color: #333;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header {
+            background-color: #ffccf2;
+            padding: 20px;
+        }
+        header h1 {
+            color: #b30086;
+        }
+        nav {
+            background-color: #ff69b4;
+            padding: 10px 0;
+           
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: slideIn 1.5s;
+        }
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            animation: pulse 2s infinite;
+        }
+        .button:hover {
+            background: #ff478a;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .profile-pic {
+            margin-top: 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #ff69b4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: bounceIn 1.5s;
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome, Lerato!</h1>
+        <p>This website is made especially for you, Lerato. 💖</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        
+        <a href="question.html">A Mystery Unfolds</a>
+    </nav>
+
+    <section>
+        <img src="Lerato2.jpg" alt="Lerato's Picture" class="profile-pic">
+        <h2>Welcome</h2>
+        <p>Hi Lerato, welcome to a little corner of the internet I made just for you! Use the navigation above to explore the pages I’ve created to express how much you mean to me. For a long time, I've been looking for the perfect way to express this to you. I hope this gesture sweeps you off your feet and shows you just how deeply I care for you.I can’t wait for you to explore this space I’ve made for you and hope it makes you feel as special as you truly are.</p>
+    </section>
+
+    <footer>
+        <p>This could be the beginning of something special. 🌟</p>
+    </footer>
+</body>
+</html>
